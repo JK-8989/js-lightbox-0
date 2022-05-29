@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  height: 100vh;
+}
+img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center center;
+}
