@@ -31,10 +31,20 @@ z-index: 100;
 width: 100vw;
 height: 100vh;
 background-color: rgba(0, 0, 0, 0.5);
-backdrop-filter: blur(2px);
+/* backdrop-filter: blur(2px); */
 display: none;
 }
 #lightbox-bg.active {
   display: block;
   place-items: center;
+}
+#full-image {
+  width: 650px;
+  height: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
