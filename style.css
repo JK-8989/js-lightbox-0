@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   /* border: 0; */
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
+  /* vertical-align: baseline; */
+  /* box-sizing: border-box; */
+} 
 .container {
   display: grid;
   grid-template-columns: repeat(3, 200px);
@@ -19,4 +19,22 @@ img {
   cursor: pointer;
   object-fit: cover;
   object-position: center center;
+  transition: all 0.3s;
+}
+img:hover {
+  transform: scale(1.02);
+}
+#lightbox-bg {
+ position: fixed;
+ top: 0;
+z-index: 100;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(2px);
+display: none;
+}
+#lightbox-bg.active {
+  display: block;
+  place-items: center;
 }
